@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects – Mediacom Group</title>
+  <meta name="description"
+    content="Explore Mediacom Group projects across telecom, real estate, agriculture, petroleum, healthcare, and digital education." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-mc navbar-expand-lg">
+    <div class="container px-4 px-lg-5 d-flex align-items-center justify-content-between h-100 w-100">
+      <a class="d-flex align-items-center gap-2 text-decoration-none" href="index.html">
+        <img src="assets/logo-navbar-clean.png" alt="Mediacom Group" class="brand-logo" />
+      </a>
+      <div class="d-none d-lg-flex align-items-center" style="gap: 2.25rem;">
+        <a class="nav-link-mc" href="index.html">Home</a>
+        <a class="nav-link-mc" href="about.html">About</a>
+        <a class="nav-link-mc" href="leadership.html">Leadership</a>
+        <a class="nav-link-mc" href="projects.html">Projects</a>
+        <a class="btn-nav-premium" href="contact.html">Contact</a>
+      </div>
+      <div class="d-flex align-items-center justify-content-end" style="width: 100px;">
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse d-lg-none w-100" id="mobileMenu"
+        style="position:absolute; top:80px; left:0; right:0; background:var(--navy); border-top:1px solid rgba(196,157,77,0.1); padding:1.5rem;">
+        <a class="footer-link d-block mb-3" href="index.html">Home</a>
+        <a class="footer-link d-block mb-3" href="about.html">About</a>
+        <a class="footer-link d-block mb-3" href="leadership.html">Leadership</a>
+        <a class="footer-link d-block mb-3" href="projects.html">Projects</a>
+        <a class="footer-link d-block mb-4" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <img class="hero-bg" src="assets/hero-main.jpg" alt="Projects" />
+    <div class="hero-overlay"></div>
+    <div class="hero-content section-padding w-100">
+      <div class="container-wide">
+        <p class="section-label mb-2 animate-fade-up">Our Projects</p>
+        <h1 class="heading-xl text-cream mb-3 animate-fade-up">A Legacy of Successful Projects</h1>
+        <p class="body-lg animate-fade-up" style="color:rgba(245,240,225,0.8); max-width:36rem;">
+          Explore our diverse portfolio of projects across multiple industries.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS GRID -->
+  <section class="section-padding-lg" style="background:var(--bg);">
+    <div class="container-wide">
+      <!-- Filter Tabs -->
+      <div class="d-flex flex-wrap gap-2 mb-5 justify-content-center">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Telecom">Telecom</button>
+        <button class="filter-btn" data-filter="Real Estate">Real Estate</button>
+        <button class="filter-btn" data-filter="Agriculture">Agriculture</button>
+        <button class="filter-btn" data-filter="Petroleum">Petroleum</button>
+        <button class="filter-btn" data-filter="Healthcare">Healthcare</button>
+        <button class="filter-btn" data-filter="Education">Education</button>
+      </div>
+
+      <div class="row g-4" id="projects-grid">
+
+        <!-- Mediacom CATV (Pvt.) Ltd. -->
+        <div class="col-md-6 col-lg-4 animate-fade-up project-item" data-category="Telecom">
+          <a href="telecom.html" class="glass-card project-card text-decoration-none">
+            <div class="card-img-wrap">
+              <img src="assets/mediacom CATV.jpeg" alt="Mediacom CATV (Pvt.) Ltd." loading="lazy"  style="width:100%; height:100%; object-fit:cover; object-position:top center;"/>
+            </div>
+            <div class="card-body-mc">
+              <span class="card-cat">Telecom</span>
+              <h3 class="heading-sm card-title-mc mt-1 mb-2">Mediacom CATV (Pvt.) Ltd.</h3>
+              <p class="body-md line-clamp-3" style="font-size:0.875rem;">Since 2002, Mediacom CATV has grown into one
+                of Pakistan’s largest regional cable operators, serving 500,000+ customers via G.652 fiber-optic
+                network.</p>
+              <div class="mt-auto pt-3 d-flex align-items-center gap-1 text-gold"
+                style="font-size:0.875rem; font-weight:600;">
+                Read More <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Mediacom Trade City -->
+        <div class="col-md-6 col-lg-4 animate-fade-up project-item" data-category="Real Estate">
+          <a href="trade-city.html" class="glass-card project-card text-decoration-none">
+            <div class="card-img-wrap">
+              <img src="assets/mediacom trade city.jpeg" alt="Mediacom Trade City" loading="lazy" style="width:100%; height:100%; object-fit:cover; object-position:top center;" />
+            </div>
+            <div class="card-body-mc">
+              <span class="card-cat">Real Estate</span>
+              <h3 class="heading-sm card-title-mc mt-1 mb-2">Mediacom Trade City</h3>
+              <p class="body-md line-clamp-3" style="font-size:0.875rem;">Developed in 2004, this flagship 350,000
+                sq.ft. multi-storey commercial complex in Kohinoor Town accommodates leading businesses and retail.</p>
+              <div class="mt-auto pt-3 d-flex align-items-center gap-1 text-gold"
+                style="font-size:0.875rem; font-weight:600;">
+                Read More <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Mediacom Developers -->
+        <div class="col-md-6 col-lg-4 animate-fade-up project-item" data-category="Real Estate">
+          <a href="real-estate.html" class="glass-card project-card text-decoration-none">
+            <div class="card-img-wrap">
+              <img src="assets/mediacom evenue cover.png" alt="Mediacom Avenue" loading="lazy" />
+            </div>
+            <div class="card-body-mc">
+              <span class="card-cat">Real Estate</span>
+              <h3 class="heading-sm card-title-mc mt-1 mb-2">Mediacom Developers</h3>
+              <p class="body-md line-clamp-3" style="font-size:0.875rem;">Mediacom Developers offers comprehensive and expert guidance for all your real estate needs. With a strong portfolio and years of experience, our experts are equipped to handle land development, architectural planning, and construction services to ensure your vision becomes reality.</p>
+              <div class="mt-auto pt-3 d-flex align-items-center gap-1 text-gold"
+                style="font-size:0.875rem; font-weight:600;">
+                Read More <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- McSOL (Pvt.) Ltd. -->
+        <div class="col-md-6 col-lg-4 animate-fade-up project-item" data-category="Telecom">
+          <a href="mscol.html" class="glass-card project-card text-decoration-none">
+            <div class="card-img-wrap">
+              <img src="assets/mcsol pvt/second.png" alt="McSOL (Pvt.) Ltd." loading="lazy" />
+            </div>
+            <div class="card-body-mc">
+              <span class="card-cat">Telecom</span>
+              <h3 class="heading-sm card-title-mc mt-1 mb-2">McSOL (Pvt.) Ltd.</h3>
+              <p class="body-md line-clamp-3" style="font-size:0.875rem;">Faisalabad’s leading FTTH internet provider
+                serving over 35,000 subscribers with gigabit connectivity, digital TV, and voice services.</p>
+              <div class="mt-auto pt-3 d-flex align-items-center gap-1 text-gold"
+                style="font-size:0.875rem; font-weight:600;">
+                Read More <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Sindhu Agriculture & Livestock Farms -->
+        <div class="col-md-6 col-lg-4 animate-fade-up project-item" data-category="Agriculture">
+          <a href="agriculture.html" class="glass-card project-card text-decoration-none">
+            <div class="card-img-wrap">
+              <img src="assets/agriculture-hero.jpg" alt="Sindhu Agriculture &amp; Livestock Farms" loading="lazy" />
+            </div>
+            <div class="card-body-mc">
+              <span class="card-cat">Agriculture</span>
+              <h3 class="heading-sm card-title-mc mt-1 mb-2">Sindhu Agriculture</h3>
+              <p class="body-md line-clamp-3" style="font-size:0.875rem;">A large-scale agricultural estate near the
+                CPEC corridor focused on sustainable farming, efficient irrigation, and commercial crop production.</p>
+              <div class="mt-auto pt-3 d-flex align-items-center gap-1 text-gold"
+                style="font-size:0.875rem; font-weight:600;">
+                Read More <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Mediacom Petroleum -->
+        <div class="col-md-6 col-lg-4 animate-fade-up project-item" data-category="Petroleum">
+          <a href="petroleum.html" class="glass-card project-card text-decoration-none">
+            <div class="card-img-wrap">
+              <img src="assets/Mediacom Petroleum/img_343.jpeg" alt="Mediacom Petroleum" loading="lazy" />
+            </div>
+            <div class="card-body-mc">
+              <span class="card-cat">Petroleum</span>
+              <h3 class="heading-sm card-title-mc mt-1 mb-2">Mediacom Petroleum</h3>
+              <p class="body-md line-clamp-3" style="font-size:0.875rem;">A modern fuel retail facility near FIEDMC,
+                providing reliable energy solutions for industrial, logistics, and retail customers.</p>
+              <div class="mt-auto pt-3 d-flex align-items-center gap-1 text-gold"
+                style="font-size:0.875rem; font-weight:600;">
+                Read More <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- C8 Central – Luxury Apartments -->
+        <div class="col-md-6 col-lg-4 animate-fade-up project-item" data-category="Real Estate">
+          <a href="c8-central.html" class="glass-card project-card text-decoration-none">
+            <div class="card-img-wrap">
+              <img src="assets/c8_central/new model cover.png" alt="C8 Central – Luxury Apartments" loading="lazy" style="width:100%; height:100%; object-fit:cover; object-position:top center;"/>
+            </div>
+            <div class="card-body-mc">
+              <span class="card-cat">Real Estate</span>
+              <h3 class="heading-sm card-title-mc mt-1 mb-2">C8 Central Luxury Apartments</h3>
+              <p class="body-md line-clamp-3" style="font-size:0.875rem;">A premium residential tower offering
+                contemporary luxury living, elegant architecture, and thoughtfully planned layouts in a prime location.
+              </p>
+              <div class="mt-auto pt-3 d-flex align-items-center gap-1 text-gold"
+                style="font-size:0.875rem; font-weight:600;">
+                Read More <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- McWELL Pharma -->
+        <div id="mcwell-pharma" class="col-md-6 col-lg-4 animate-fade-up project-item"
+          data-category="Healthcare">
+          <a href="mcwell-pharma.html" class="glass-card project-card text-decoration-none">
+            <div class="card-img-wrap">
+              <img src="assets/McWell Pharma/img 2.jpeg" alt="McWELL Pharma" loading="lazy" />
+            </div>
+            <div class="card-body-mc">
+              <span class="card-cat">Healthcare</span>
+              <h3 class="heading-sm card-title-mc mt-1 mb-2">McWELL Pharma</h3>
+              <p class="body-md line-clamp-3" style="font-size:0.875rem;">McWELL Pharma is the Group’s upcoming pharmaceutical and nutraceutical manufacturing facility, currently under development on Sargodha Road Bypass near the Motorway Interchange and Faisalabad Small Industrial Estate.</p>
+              <div class="mt-auto pt-3 d-flex align-items-center gap-1 text-gold"
+                style="font-size:0.875rem; font-weight:600;">
+                Read More <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Mediacom Digital Institute -->
+        <div class="col-md-6 col-lg-4 animate-fade-up project-item" data-category="Education">
+          <a href="digital-institute.html" class="glass-card project-card text-decoration-none">
+            <div class="card-img-wrap">
+              <img src="assets/Mediacom Digital Institute/third_cleaned.jpeg" alt="Mediacom Digital Institute"
+                loading="lazy" />
+            </div>
+            <div class="card-body-mc">
+              <span class="card-cat">Education</span>
+              <h3 class="heading-sm card-title-mc mt-1 mb-2">Mediacom Digital Institute</h3>
+              <p class="body-md line-clamp-3" style="font-size:0.875rem;">A leading platform for digital education and
+                career development, offering 113+ professional courses to bridge the gap between education and
+                employment.</p>
+              <div class="mt-auto pt-3 d-flex align-items-center gap-1 text-gold"
+                style="font-size:0.875rem; font-weight:600;">
+                Read More <i class="bi bi-arrow-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top section-padding">
+      <div class="container-wide">
+        <div class="row g-5">
+          <div class="col-lg-4"><img src="assets/logo-navbar-clean.png" alt="Mediacom Group" class="brand-logo mb-3"
+               />
+            <p style="font-size:0.9rem; color:rgba(245,240,225,0.6); line-height:1.75; margin-bottom:1.5rem;">For over three decades, Mediacom Group has evolved into a leading privately held diversified conglomerate, with operations spanning telecommunications, technology, commercial real estate, agriculture, hospitality, and strategic investments.</p>
+            <div class="d-flex gap-2"><a href="#" class="footer-social-btn">f</a><a href="#"
+                class="footer-social-btn">t</a><a href="#" class="footer-social-btn">Y</a><a href="#"
+                class="footer-social-btn">in</a></div>
+          </div>
+          <div class="col-sm-6 col-lg-2 footer-businesses">
+            <div class="footer-heading">Our Businesses</div><a href="telecom.html" class="footer-link" data-business="telecom">Mediacom
+              CATV</a><a href="real-estate.html" class="footer-link" data-business="real-estate">Mediacom Developers</a><a href="agriculture.html"
+              class="footer-link" data-business="agriculture">Sindhu
+              Agriculture</a><a href="petroleum.html" class="footer-link" data-business="petroleum">Mediacom Petroleum</a><a href="mscol.html" class="footer-link" data-business="mscol">McSOL (Pvt.) Ltd.</a><a
+              href="digital-institute.html" class="footer-link" data-business="digital-institute">Mediacom Digital Institute</a>
+            <a href="trade-city.html" class="footer-link" data-business="trade-city">Mediacom Trade City</a>
+            <a href="c8-central.html" class="footer-link" data-business="c8-central">C8 Central</a>
+            <a href="mcwell-pharma.html" class="footer-link" data-business="mcwell-pharma">McWell Pharma</a>
+          </div>
+          <div class="col-sm-6 col-lg-2">
+            <div class="footer-heading">Company</div><a href="about.html" class="footer-link">About Us</a><a
+              href="leadership.html" class="footer-link">Leadership</a><a href="projects.html"
+              class="footer-link">Projects</a><a href="contact.html" class="footer-link">Contact</a>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-heading">Contact</div>
+            <div class="footer-contact-item"><i class="bi bi-geo-alt-fill footer-contact-icon"></i><span
+                id="footer-contact-address" class="footer-contact-text">Mediacom Trade City, Jaranwala Road, Faisalabad, Pakistan</span></div>
+            <div class="footer-contact-item"><i class="bi bi-telephone-fill footer-contact-icon"></i>
+              <div>
+                <div id="footer-contact-phone" class="footer-contact-text">Tel: +92-41-111 888 300</div>
+                <div id="footer-contact-uan" class="footer-contact-text">UAN: +92 41 111 888 300</div>
+              </div>
+            </div>
+            <div class="footer-contact-item"><i class="bi bi-envelope-fill footer-contact-icon"></i><span
+                id="footer-contact-email" class="footer-contact-text">info@mediacom.com.pk</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container-wide d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <p class="footer-copy mb-0">&copy; <span id="yr"></span> Mediacom Group of Companies. All rights reserved.</p>
+        <p class="footer-copy mb-0">Operational since 1995 — Pakistan &amp; U.A.E.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // Filter functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        projectItems.forEach(item => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.style.display = '';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
+  <style>
+    .filter-btn {
+      padding: 0.5rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: 2rem;
+      background: transparent;
+      color: var(--slate);
+      font-family: var(--font-body);
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--navy);
+      font-weight: 600;
+    }
+  </style>
+</body>
+
+</html>
