@@ -96,13 +96,6 @@ img {
   font-family: var(--font-display);
 }
 
-.hero-desc {
-  font-size: 1.1rem;
-  color: rgba(245, 240, 225, 0.75);
-  max-width: 40rem;
-  line-height: 1.85;
-}
-
 .heading-lg {
   font-size: clamp(1.9rem, 4.5vw, 3.2rem);
   font-weight: 700;
@@ -627,31 +620,15 @@ img {
 }
 
 .stat-item {
-  padding: 1.25rem 0.5rem;
+  padding: 3rem 1rem;
   text-align: center;
   border-right: 1px solid rgba(184, 134, 11, 0.08);
-  border-bottom: 1px solid rgba(184, 134, 11, 0.08);
   transition: background var(--transition), transform var(--transition);
   position: relative;
 }
 
-.stat-item:nth-child(even) {
+.stat-item:last-child {
   border-right: none;
-}
-
-.stat-item:nth-child(n+3) {
-  border-bottom: none;
-}
-
-@media (min-width: 768px) {
-  .stat-item {
-    padding: 3rem 1rem;
-    border-bottom: none !important;
-    border-right: 1px solid rgba(184, 134, 11, 0.08) !important;
-  }
-  .stat-item:last-child {
-    border-right: none !important;
-  }
 }
 
 .stat-item:hover {
@@ -661,13 +638,10 @@ img {
 
 .stat-icon {
   color: var(--gold);
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 0 auto 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 auto 1rem;
   transition: transform var(--transition);
-}
-@media (min-width: 768px) {
-  .stat-icon { width: 2rem; height: 2rem; margin: 0 auto 1rem; }
 }
 
 .stat-item:hover .stat-icon {
@@ -676,14 +650,11 @@ img {
 
 .stat-value {
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-weight: 800;
   color: var(--cream);
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.5rem;
   letter-spacing: -0.02em;
-}
-@media (min-width: 768px) {
-  .stat-value { font-size: 2.2rem; margin-bottom: 0.5rem; }
 }
 
 .stat-label {
