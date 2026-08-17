@@ -129,11 +129,11 @@
 
     /* Premium Mosaic */
     .img-mosaic-premium {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: center;
+      display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center; width: 100%;
     }
     .img-mosaic-premium div {
-      border-radius: 16px; box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-      overflow: hidden; cursor: pointer;
+      border-radius: 16px; box-shadow: var(--shadow-premium);
+      overflow: hidden; cursor: pointer; width: 100%;
     }
     .img-mosaic-premium img {
       width: 100%; display: block; object-fit: cover;
@@ -141,6 +141,9 @@
     }
     .img-mosaic-premium div:hover img {
       transform: scale(1.05); filter: brightness(1.05);
+    }
+    @media (min-width: 768px) {
+      .img-mosaic-premium { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
     }
     @media (min-width: 992px) {
       .c8-model-wrap-1 { transform: translateY(-30px); }
@@ -232,19 +235,15 @@
   <div class="hero-overlay" style="background:linear-gradient(to right, rgba(10,22,40,0.88) 35%, rgba(10,22,40,0.35) 100%);"></div>
   <div class="hero-content section-padding w-100">
     <div class="container-wide">
-      <div class="d-flex gap-2 mb-4">
-        <span class="c8-badge"><i class="bi bi-patch-check-fill"></i> TMA Approved</span>
-        <span class="c8-badge"><i class="bi bi-patch-check-fill"></i> FBR Registered</span>
-      </div>
-      <p class="section-label mb-3">Luxury Residences &middot; Faisalabad</p>
-      <h1 class="heading-xl text-cream mb-4">C8 Central</h1>
-      <p style="font-size:1.1rem; color:rgba(245,240,225,0.75); max-width:38rem; line-height:1.85; margin-bottom:2.5rem;">
+      <p class="section-label mb-3 animate-fade-up">Luxury Residences &middot; Faisalabad</p>
+      <h1 class="heading-xl text-cream mb-4 animate-fade-up">C8 Central</h1>
+      <p class="hero-desc animate-fade-up">
         Contemporary luxury living crafted for those who expect the finest. Part of Mediacom Trade City — your peaceful destination on Jaranwala Road.
       </p>
-      <div class="d-flex flex-wrap gap-3">
+      <!-- <div class="d-flex flex-wrap gap-3">
         <a href="#gallery" class="btn-gold">Explore Apartments</a>
         <a href="C8 Central Catalog.pdf" download class="btn-outline-mc">Download Brochure</a>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
