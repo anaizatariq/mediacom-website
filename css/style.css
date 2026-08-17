@@ -161,7 +161,7 @@ img {
 }
 
 .section-padding-lg {
-  padding: 8rem 1.5rem;
+  padding: 4rem 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -170,7 +170,7 @@ img {
   }
 
   .section-padding-lg {
-    padding: 8rem 3rem;
+    padding: 5rem 3rem;
   }
 }
 
@@ -180,7 +180,7 @@ img {
   }
 
   .section-padding-lg {
-    padding: 8rem 5rem;
+    padding: 6rem 5rem;
   }
 }
 
@@ -190,7 +190,7 @@ img {
   }
 
   .section-padding-lg {
-    padding: 4rem 10rem;
+    padding: 8rem 10rem;
   }
 }
 
