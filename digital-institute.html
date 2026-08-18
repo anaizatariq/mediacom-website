@@ -91,7 +91,7 @@
             <!-- Image Grid: Building Exterior + Classroom + Co-working + Exam Center -->
             <div class="row g-3 position-relative" style="z-index: 1;">
               <!-- Left column: Building exterior (tall) + Classroom -->
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="d-flex flex-column gap-3">
                   <!-- Building exterior / official institute branding image -->
                   <div class="position-relative rounded-4 overflow-hidden shadow"
@@ -110,7 +110,7 @@
                   <!-- Computer Lab -->
                   <div class="position-relative rounded-4 overflow-hidden shadow"
                     style="aspect-ratio: 1/1; border: 1px solid rgba(196,157,77,0.15);">
-                    <img src="assets/Mediacom Digital Institute/first.jpeg" class="w-100 h-100"
+                    <img src="assets/Mediacom Digital Institute/first_cleaned.jpeg" class="w-100 h-100"
                       style="object-fit: cover; object-position: center; transition: transform 0.5s ease;"
                       onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"
                       alt="Computer Lab" loading="lazy" />
@@ -123,9 +123,12 @@
                   </div>
                 </div>
               </div>
-              <!-- Right column (offset down): Co-working + Exam Center -->
-              <div class="col-6">
-                <div class="d-flex flex-column gap-3" style="margin-top: 2.5rem;">
+              <!-- Right column (offset down on desktop): Co-working + Exam Center -->
+              <div class="col-12 col-md-6 mt-3 mt-md-0">
+                <div class="d-flex flex-column gap-3" style="padding-top: var(--offset, 0);">
+                  <style>
+                    @media(min-width: 768px){ .col-md-6 > .d-flex { --offset: 2.5rem; } }
+                  </style>
                   <!-- Co-working space -->
                   <div class="position-relative rounded-4 overflow-hidden shadow"
                     style="aspect-ratio: 1/1; border: 1px solid rgba(196,157,77,0.15);">
@@ -185,9 +188,9 @@
         <!-- Large wide classroom shot -->
         <div class="col-md-8 animate-fade-up">
           <a href="#" class="d-block rounded-3 overflow-hidden gallery-thumb" data-bs-toggle="modal"
-            data-bs-target="#galleryModal" data-src="assets/Mediacom Digital Institute/second.jpeg"
+            data-bs-target="#galleryModal" data-src="assets/Mediacom Digital Institute/second_cleaned.jpeg"
             title="Main Lecture Hall">
-            <img src="assets/Mediacom Digital Institute/second.jpeg" class="w-100"
+            <img src="assets/Mediacom Digital Institute/second_cleaned.jpeg" class="w-100"
               style="height:260px; object-fit:cover; object-position:center; display:block;"
               alt="Main Lecture Hall — spacious computer lab" loading="lazy" />
             <div class="gallery-thumb-label">Main Lecture Hall</div>
@@ -196,8 +199,8 @@
         <!-- Yellow-wall lab -->
         <div class="col-md-4 animate-fade-up">
           <a href="#" class="d-block rounded-3 overflow-hidden gallery-thumb" data-bs-toggle="modal"
-            data-bs-target="#galleryModal" data-src="assets/Mediacom Digital Institute/first.jpeg" title="Computer Lab">
-            <img src="assets/Mediacom Digital Institute/first.jpeg" class="w-100"
+            data-bs-target="#galleryModal" data-src="assets/Mediacom Digital Institute/first_cleaned.jpeg" title="Computer Lab">
+            <img src="assets/Mediacom Digital Institute/first_cleaned.jpeg" class="w-100"
               style="height:260px; object-fit:cover; object-position:center; display:block;"
               alt="Computer Lab with yellow wall" loading="lazy" />
             <div class="gallery-thumb-label">Computer Lab</div>

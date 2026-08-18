@@ -558,12 +558,33 @@ img {
 .page-hero .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(10, 22, 40, 0.7) 0%, rgba(20, 31, 53, 0.65) 100%);
+  background: linear-gradient(135deg, rgba(10, 22, 40, 0.6) 0%, rgba(20, 31, 53, 0.4) 100%);
 }
 
 .page-hero .hero-content {
   position: relative;
   z-index: 2;
+}
+
+.page-hero .heading-xl,
+.page-hero .body-lg {
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.32);
+}
+
+.page-hero .section-label {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.4rem 1.25rem;
+  border-radius: 50px;
+  color: var(--gold-light) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(196, 157, 77, 0.4);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* Main hero */

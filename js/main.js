@@ -82,69 +82,68 @@ if (contactForm) {
 }
 
 // ── Footer Business Selector — dynamic contact panel ──
-// Contact data per business (placeholders — swap values when client shares real details)
 const businessContacts = {
   'telecom': {
     address: 'Mediacom Trade City, Jaranwala Road, Faisalabad, Pakistan',
-    phone: '+92-41-111 888 300',       // ← PLACEHOLDER
+    phone: 'UAN: +92 41 111 888 300 | PTCL: 041 8502337 | Mob: 0314 4902595',
     uan: null,
-    email: 'catv@mediacom.com.pk'      // ← PLACEHOLDER
+    email: 'info@mediacom.com.pk'
   },
   'mscol': {
     address: 'Mediacom Trade City, Jaranwala Road, Faisalabad, Pakistan',
-    phone: '+92-41-111 888 300',       // ← PLACEHOLDER
+    phone: 'PTCL: 041 8502338 | Mob: +92 313 1668300',
     uan: null,
-    email: 'mcsol@mediacom.com.pk'     // ← PLACEHOLDER
+    email: 'info@mcsol.com.pk'
   },
   'real-estate': {
     address: 'Mediacom Trade City, Jaranwala Road, Faisalabad, Pakistan',
-    phone: '+92-41-111 888 300',       // ← PLACEHOLDER
+    phone: 'PTCL: 041 8502339 | Mob: +92 313 1668300',
     uan: null,
-    email: 'developers@mediacom.com.pk' // ← PLACEHOLDER
+    email: 'info@mediacom.com.pk'
   },
   'agriculture': {
-    address: 'Mediacom Trade City, Jaranwala Road, Faisalabad, Pakistan',
-    phone: '+92-41-111 888 300',       // ← PLACEHOLDER
+    address: 'Chak no 44, JB Sahianwala interchange to Chiniot Road chak jhumra Fasialabad, Pakistan',
+    phone: 'Mob: 0300 7864417',
     uan: null,
-    email: 'agriculture@mediacom.com.pk' // ← PLACEHOLDER
+    email: 'info@mediacom.com.pk'
   },
   'petroleum': {
-    address: 'Mediacom Trade City, Jaranwala Road, Faisalabad, Pakistan',
-    phone: '+92-41-111 888 300',       // ← PLACEHOLDER
+    address: 'Chak no 19, JB Sahianwala interchange to Chiniot Road chak jhumra Fasialabad, Pakistan',
+    phone: 'Mob: 0300 4775949',
     uan: null,
-    email: 'petroleum@mediacom.com.pk' // ← PLACEHOLDER
+    email: 'info@mediacom.com.pk'
   },
   'digital-institute': {
-    address: 'Mediacom Trade City, Jaranwala Road, Faisalabad, Pakistan',
-    phone: '+92-41-111 888 300',       // ← PLACEHOLDER
+    address: 'Sabri Tower Moza kalooana Gojra Road Jhang Sadar.',
+    phone: 'UAN: 0477622463',
     uan: null,
-    email: 'mdi@mediacom.com.pk'       // ← PLACEHOLDER
+    email: 'info@mediacomdigital.com.pk'
   },
   'trade-city': {
     address: 'Mediacom Trade City, Kohinoor City, Jaranwala Road, Faisalabad',
-    phone: '+92-41-111 888 300',       // ← PLACEHOLDER
+    phone: 'UAN: +92 41 111 888 300',
     uan: null,
-    email: 'tradecity@mediacom.com.pk' // ← PLACEHOLDER
+    email: 'info@mediacom.com.pk'
   },
   'c8-central': {
     address: 'Mediacom Trade City, Jaranwala Road, Faisalabad, Pakistan',
-    phone: '+92-41-111 888 300',       // ← PLACEHOLDER
+    phone: 'UAN: +92 41 111 888 300 | PTCL: 041 8502340 | Mob: 0306 3644545',
     uan: null,
-    email: 'c8central@mediacom.com.pk' // ← PLACEHOLDER
+    email: 'info@mediacom.com.pk'
   },
   'mcwell-pharma': {
-    address: 'Mediacom Trade City, Jaranwala Road, Faisalabad, Pakistan',
-    phone: '+92-41-111 888 300',       // ← PLACEHOLDER
+    address: 'Adjacent Small Estate Industrial Area, Main Sargodha Road Bypass, Near Nishatabad Police Station, Faisalabad, Punjab, Pakistan',
+    phone: 'Mob: 0323 0176176',
     uan: null,
-    email: 'mcwell@mediacom.com.pk'    // ← PLACEHOLDER
+    email: 'info@mediacom.com.pk'
   }
 };
 
 // Default head-office contact
 const defaultContact = {
   address: 'Mediacom Trade City, Jaranwala Road, Faisalabad, Pakistan',
-  phone: '+92-41-111 888 300',
-  uan: '+92 41 111 888 300',
+  phone: 'UAN: +92 41 111 888 300',
+  uan: null,
   email: 'info@mediacom.com.pk'
 };
 
@@ -171,14 +170,16 @@ function setFooterContact(data) {
   addr.textContent = data.address;
 
   if (phone) {
-    phone.textContent = data.phone ? 'Tel: ' + data.phone : '';
+    phone.textContent = data.phone || '';
     phone.style.display = data.phone ? '' : 'none';
   }
   if (uan) {
-    uan.textContent = data.uan ? 'UAN: ' + data.uan : '';
+    uan.textContent = data.uan || '';
     uan.style.display = data.uan ? '' : 'none';
   }
-  if (email) email.textContent = data.email;
+  if (email) {
+    email.textContent = data.email;
+  }
 }
 
 // On page load: auto-highlight current business + set its contact
